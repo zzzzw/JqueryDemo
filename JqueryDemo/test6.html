@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>demo</title>
+
+    <!--引入框架-->
+    <script src="resource/jQuery/jquery-1.11.3.js"></script>
+
+    <!--引入自己的js-->
+    <script src="js/test6.js"></script>
+
+<style>
+  body{font-size:13px} 
+            /* 元素初始状态样式 */
+            .divInit{width:390px;height:55px;line-height:55px;padding-left:20px}
+            .txtInit{border:#666 1px solid;padding:3px;}
+            .spnInit{width:179px;height:40px;line-height:40px;float:right;margin-top:8px;padding-left:10px;background-repeat:no-repeat}
+            
+            /* 元素丢失焦点样式 */
+            .divBlur{background-color:#FEEEC2}
+            .txtBlur{border:#666 1px solid;padding:3px;}
+            .spnBlur{}
+
+            .divFocu{background-color:#EDFFD5}/* div获取焦点样式 */
+            .spnSucc{margin-top:20px}/* 验证成功时span样式 */
+			
+			.clsInit{width:435px;height:35px;line-height:35px;padding-left:10px;margin-top:50px;}   
+           .clsTip{padding-top:5px;background-color:#eee;display:none}   
+           .btn {border:#666 1px solid;padding:2px;width:65px;float:right;margin-top:6px;margin-right:6px;}  
+		   
+		   
+</style>
+</head>
+
+<body>
+    
+    <form id="form1" action="#">
+      <div id="email" class="divInit">邮箱：
+           <span id="spnTip" class="spnInit"></span>
+           <input id="txtEmail" type="text" class="txtInit" />
+      </div>
+      
+      
+      <div style="clear:both"></div>
+     
+     
+      <div class="clsInit">  
+       厂商：<select id="selF"><option>请选择</option></select>    
+       品牌：<select id="selT"><option>请选择</option></select>    
+       型号：<select id="selC"><option>请选择</option></select>   
+       <input id="Button1" type="button" value="查询" class="btn" />  
+    </div>   
+    <div class="clsInit" id="divTip"></div>  
+   </form>
+    
+    
+    
+</body>
+
+</html>
